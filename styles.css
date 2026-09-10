@@ -865,3 +865,12 @@ details ul {
     color: #000;
   }
 }
+
+/* Long support addresses must remain readable on narrow screens and at
+   increased text sizes. Keep all navigation links visible. */
+p, .metric, .score-copy { overflow-wrap: anywhere; }
+.nav-links { flex-wrap: wrap; }
+.content-layout { grid-template-columns: minmax(0, 790px); }
+@media (max-width: 380px) {
+  .score-row { flex-direction: column; align-items: flex-start; }
+}

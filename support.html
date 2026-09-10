@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Support and contact information for the Backflow Log iOS app for Massachusetts backflow testers.">
   <meta name="theme-color" content="#0b2331">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; object-src 'none'; base-uri 'self'">
   <title>Support — Backflow Log</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -40,7 +40,7 @@
           <p class="eyebrow">Contact</p>
           <h2>Send a focused support note.</h2>
           <p class="lede">Email <a href="mailto:goodlittleapps.support@gmail.com">goodlittleapps.support@gmail.com</a> and include your iOS version, Backflow Log version, device model, what you expected, and what happened.</p>
-          <p>Never email customer records, signatures, or a generated report unless it is genuinely needed to resolve the issue — support does not need them, and your records are your business, not ours.</p>
+          <p>Describe the issue without customer records or signatures. If an example is needed, use a test record with fictional details.</p>
           <div class="actions">
             <a class="button" href="mailto:goodlittleapps.support@gmail.com">Email support</a>
           </div>
@@ -50,15 +50,15 @@
           <h3>Two-minute checks first.</h3>
           <div class="diagnostic-rule">
             <span aria-hidden="true">1</span>
-            <p><strong>Update the app.</strong><br>Most fixes ship quickly during the testing period.</p>
+            <p><strong>Update the app.</strong><br><a href="https://apps.apple.com/us/app/backflow-log/id6799603346">Check the App Store</a> for the latest available version.</p>
           </div>
           <div class="diagnostic-rule">
             <span aria-hidden="true">2</span>
-            <p><strong>Check My Info.</strong><br>Reports print your tester profile and gauge exactly as entered there.</p>
+            <p><strong>Check My Info.</strong><br>Check your tester and gauge details before recording a new test.</p>
           </div>
           <div class="diagnostic-rule">
             <span aria-hidden="true">3</span>
-            <p><strong>Re-generate the PDF.</strong><br>After editing a test, generate the report again — it is built from the current record.</p>
+            <p><strong>Re-generate the PDF.</strong><br>After editing a test, review its readings and tester details, then sign and share the corrected report.</p>
           </div>
         </aside>
       </div>
@@ -88,12 +88,12 @@
 
           <details>
             <summary>How is pass/fail decided?</summary>
-            <p>Against the standard acceptance criteria used in Massachusetts programs: each DC check holds at least 1.0 psid closed tight; an RP's first check holds at least 5.0 psid with the relief valve opening at 2.0 psid or higher; a vacuum breaker's air inlet opens at 1.0 psid or higher with the check holding 1.0 psid. Your reading is always shown alongside the verdict — you remain the tester of record.</p>
+            <p>The app checks the readings you enter: each DC check holds at least 1.0 psid closed tight; an RP's first check holds at least 5.0 psid with the relief valve opening at 2.0 psid or higher; a vacuum breaker's air inlet opens at 1.0 psid or higher with the check holding 1.0 psid. It also checks the applicable leak and valve observations. The calculated result does not replace the complete test procedure required by your certification and water system.</p>
           </details>
 
           <details>
             <summary>Is the PDF the official MassDEP form?</summary>
-            <p>The report is modeled on the Massachusetts cross-connection program's Inspection &amp; Maintenance Report format — same identification, test data, and certification content. Some water systems overprint their own headers or require their own copy of the form; confirm acceptance with each program you file with.</p>
+            <p>No. It is a Massachusetts-style inspection report, and it does not include every field on the official form. Confirm the required fields, signatures, format, and submission method with each water system before relying on it for filing. The app does not generate the separate repair and retest form. MassDEP provides the <a href="https://www.mass.gov/doc/backflow-prevention-device-inspection-maintenance-report-form-0/download">official inspection form</a> and <a href="https://www.mass.gov/doc/backflow-prevention-device-repair-information-retest-report-form-0/download">repair and retest form</a>.</p>
           </details>
 
           <details>
@@ -103,19 +103,19 @@
 
           <details>
             <summary>How does retest scheduling work?</summary>
-            <p>Each device's next test date comes from its most recent <em>passing</em> test and its interval — semiannual for RP and annual for DC by default, matching 310 CMR 22.22, with a per-device override for water systems on different schedules. A failed or unfinished test does not advance the schedule: the assembly stays on the dashboard until a test passes. Overdue and upcoming tests appear there, along with the 14-day repair-and-retest window after a failure.</p>
-            <p>Reminders are optional and off until you turn them on in My&nbsp;Info. When enabled, the app schedules local notifications on your device for a device coming due and the day it is due, the 14-day repair deadline after a failure, your certification expiry and gauge calibration, and a monthly nudge to export a backup. They are scheduled on the device from records you already entered — there is no server, and nothing is sent to us.</p>
+            <p>Each device's next test date comes from its most recent <em>passing</em> test and its interval — semiannual for RP and annual for DC by default, with a per-device override for the schedule your water system requires, including seasonal service. A failed or unfinished test does not advance the schedule: the assembly stays on the dashboard until a test passes. Overdue and upcoming tests appear there, along with the 14-day repair-and-retest window after a failure.</p>
+            <p>Reminders are optional and off until you turn them on in My&nbsp;Info. When enabled, the app schedules local notifications on your device for a device coming due and the day it is due, failed-device retests, your certification expiry and gauge calibration, and a monthly nudge to export a backup. They are scheduled on the device from records you already entered — there is no server, and nothing is sent to us.</p>
           </details>
 
           <details>
             <summary>Can I move my records to a new iPhone?</summary>
-            <p>Two ways. Backflow Log's data is included in your normal iPhone backup, so restoring a new phone from an iCloud or computer backup carries your records over. There is also <strong>Export Backup</strong> in My&nbsp;Info, which writes a single file holding your tester profile, customers, devices, tests, signatures, and photos, and hands it to the iOS share sheet — save it to iCloud Drive, Google Drive, Dropbox, or wherever you keep records. <strong>Restore from Backup</strong> on the new phone reads that file back.</p>
+            <p>Use <strong>Export Backup</strong> in My&nbsp;Info and save the file to a location you can access from the new phone, such as iCloud Drive. Verify the file is there before deleting the app or replacing the phone. It contains your tester profile, customers, devices, tests, signatures, and photos. Use <strong>Restore from Backup</strong> on the new phone to import it. Apple device backups may also include app data, depending on your backup settings; do not assume a backup succeeded without checking it.</p>
             <p>Two things worth knowing about the backup file. Restoring <em>replaces</em> everything currently in the app rather than merging, and the app confirms what the file holds before it does. And the file is a complete, unencrypted copy of your business records — treat it the way you would treat the paper folder it replaces, and put it somewhere you control.</p>
           </details>
 
           <details>
             <summary>Do I need an account or subscription?</summary>
-            <p>No account, no sign-in, no subscription, and no per-test or per-report fees. During TestFlight the app is free while it is being field-tested.</p>
+            <p>No account, no sign-in, no subscription, and no per-test or per-report fees. The app is available free on the App Store during early access. Early adopters keep the capabilities available to them now for free.</p>
           </details>
 
           <details>
@@ -131,7 +131,7 @@
 
         <div class="callout space-top">
           <strong>Failed device?</strong>
-          <p>Massachusetts gives 14 calendar days to repair and retest a failed assembly. Backflow Log's dashboard tracks that clock from the failed test's date, but the obligation — and notifying the water system — belongs to the tester and the facility. When in doubt, call the program coordinator.</p>
+          <p><a href="https://www.mass.gov/files/documents/2016/08/ot/ccdefreg.pdf">Massachusetts regulations</a> require failed or defective devices to be repaired or replaced and retested within 14 calendar days. Backflow Log's dashboard tracks that clock from the failed test's date, but the obligation — and notifying the water system — belongs to the tester and the facility. When in doubt, call the program coordinator.</p>
         </div>
 
         <p class="fine-print">Backflow Log is an independent recordkeeping tool. It is not affiliated with MassDEP, NEWWA, or any public water system.</p>
